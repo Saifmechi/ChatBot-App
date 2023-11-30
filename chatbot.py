@@ -2,7 +2,7 @@
 import openai
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'PUT_YOUR_KEY'
 
 def generate_response(prompt):
     try:
