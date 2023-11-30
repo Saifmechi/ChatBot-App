@@ -55,13 +55,15 @@ Follow these steps to run the chatbot:
     ```bash
     pip install -r requirements.txt
     ```
+   **Openai Key** ;
+     put your openai key in the chatbot.py file .
 
-5. **Run the FastAPI Application**:
+6. **Run the FastAPI Application**:
     ```bash
     uvicorn main:app --reload
     ```
 
-6. **Access the Chatbot UI**:
+7. **Access the Chatbot UI**:
     Open your browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to interact with the chatbot.
 
 ## Dependencies
