@@ -1,7 +1,10 @@
 from fastapi import FastAPI, WebSocket
 from fastapi.responses import HTMLResponse
 from fastapi import Request
-
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.responses import HTMLResponse
+from fastapi import Request
+from chatbot import generate_response 
 app = FastAPI()
 
 # Store WebSocket connections
@@ -113,10 +116,14 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
     try:
         while True:
             message = await websocket.receive_text()
-            # Simulate a response from the chatbot
-            bot_response = f"Chatbot: I received your message: {message}"
-            await websocket.send_text(bot_response)
-    except Exception as e:
-        print(f"WebSocket Error: {e}")
+
+            # You can customize the chatbot response further if needed
+            bot_response = generate_response(message)
+
+            # Send the generated response back to the client
+            await websocket.send_text(f"Chatbot: {bot_response}")
+    except WebSocketDisconnect:
+        pass
     finally:
         websockets.remove(websocket)
+
