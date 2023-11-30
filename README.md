@@ -3,6 +3,9 @@
 
   This project implements a simple chatbot using FastAPI and OpenAI's GPT-2 model.
 
+## Video Demo
+[![Demo Video](hello)](https://drive.google.com/file/d/1xwIYIgbaZPPAYV5xaFXMiDJ7y8HEnrv-/view?usp=sharing)
+
 
 ## Project Structure
 
