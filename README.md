@@ -1,7 +1,7 @@
-# Chatbot Project : fastAPI +openai GPT2
+# Chatbot Project : fastAPI +openai GPT3
 
 
-  This project implements a simple chatbot using FastAPI and OpenAI's GPT-2 model.
+  This project implements a simple chatbot using FastAPI and OpenAI's GPT-3 model.
 
 ## Video Demo
 
@@ -24,7 +24,7 @@ The project consists of the following files:
 
 ## Project Description
 
-The Chatbot Project leverages the power of FastAPI and OpenAI's GPT-2 model to create a responsive and interactive chatbot. It allows users to have dynamic conversations with the chatbot, which generates intelligent responses based on the input it receives.
+The Chatbot Project leverages the power of FastAPI and OpenAI's GPT-3 model to create a responsive and interactive chatbot. It allows users to have dynamic conversations with the chatbot, which generates intelligent responses based on the input it receives.
 
 ## Getting Started
 
@@ -70,7 +70,7 @@ Follow these steps to run the chatbot:
 
 - FastAPI
 - Uvicorn
-- OpenAI GPT-2
+- OpenAI 
 - Other dependencies listed in `requirements.txt`
 
 ## Author
